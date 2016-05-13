@@ -13,7 +13,7 @@ Prepare the submission
 
 1. Create a file with metadata that describes your VCF files. You can create a minimal one for a single VCF like this:
 
-   ``echo '{'sample1' : {'vcf_filename' : 'test1.vcf.gz'}}' >> mySubmission.json``
+         echo '{'sample1' : {'vcf_filename' : 'test1.vcf.gz'}}' >> mySubmission.json
 
    You can find a demo submission directory in ALL/.
 
@@ -21,15 +21,17 @@ Prepare the submission
 Do the submission
 -----------------
 Run a command like this:
-   ``submitIpfs mySubmission.json --email me@somewhere.com --institution 'University, State, Country' -name 'John Doe, MD'``
+
+    submitIpfs mySubmission.json --email me@somewhere.com --institution 'University, State, Country' -name 'John Doe, MD'
 
 To submit the demo directory:
-   ``submitIpfs ALL/ALL-US.json --email max@soe.ucsc.edu --institution 'UC Santa Cruz' -name 'Maximilian Haeussler'``
+
+    submitIpfs ALL/ALL-US.json --email max@soe.ucsc.edu --institution 'UC Santa Cruz' -name 'Maximilian Haeussler'
 
 The demo data are somatic mutations from the TARGET Cancer sequencing project, ALL=Acute Lymphoblastic Leukemia.
 
 The output looks like this:
-::
+
     file hash: QmaV9Lme9VjjbYxaaACR7BNK5Xiae8otrRTu9Fhn3PJ7ZX
     Submission info JSON written to ALL/ALL-US.json.submitted
     Adding ALL/ALL-US.json.submitted to IPFS
